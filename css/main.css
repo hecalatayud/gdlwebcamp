@@ -116,6 +116,18 @@
 
      h2 {
         font-family: 'Oswald', sans-serif;
+        font-size: 2.4em;
+        text-transform: uppercase;
+        text-align: center;
+     }
+
+     h2::after {
+         content: '';
+         margin: 0 auto;
+         background-image: url(../img/separador.png);
+         width: 100px;
+         height: 30px;
+         display: block;
      }
 
      .container {
@@ -135,12 +147,21 @@
         }
     }
 
-   @media (min-width: 992px) {
-      .container {
-          width: 90%;
-          max-width: 1100px;
-      }
-  }
+    @media (min-width: 992px) {
+        .container {
+            width: 90%;
+            max-width: 1100px;
+        }
+    }
+
+    .section {
+        padding: 30px 0;
+    }
+
+    .section p {
+        font-size: 1.2em;
+        text-align: center;
+    }
   
      div.hero {
          background-image: url(../img/encabezado.jpg);
@@ -236,6 +257,7 @@
 
     div.logo {
         width: 80%;
+        float: left;
     }
 
     div.logo img {
@@ -245,8 +267,32 @@
     @media (min-width: 768px) {
         div.logo {
             width: 33%;
-            float: left;
         }
+    }
+
+    div.mobile-menu {
+        width: 60px;
+        display: block;
+        float: right;
+        text-align: right;
+        margin-top: 12px;
+    }
+
+    div.mobile-menu:hover {
+        cursor: pointer;
+    }
+
+    @media (min-width: 768px) {
+        div.mobile-menu {
+            display: none;
+        }
+    }
+
+    div.mobile-menu span {
+        height: 8px;
+        margin-bottom: 6px;
+        background-color: white;
+        display: block;
     }
 
     nav.main-nav {
@@ -260,6 +306,10 @@
         text-transform: uppercase;
         text-decoration: none;
         transition: all .3s ease;
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
     }
 
     nav.main-nav a:hover {
@@ -287,6 +337,9 @@
             margin-right: 10px;
             padding: 10px;
             display: inline-block;
+            transition: all .3s ease;
+            width: auto;
+            text-align: center;
         }
     }
   
