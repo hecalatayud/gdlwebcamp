@@ -342,6 +342,43 @@
             text-align: center;
         }
     }
+
+    section.program {
+        position: relative;
+        text-align: center;
+    }
+
+    div.video-container {
+        max-width: 100%;
+        overflow-x: hidden;
+        margin: 0 auto;
+    }
+
+    div.program-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    div.event-program {
+        background-color: rgba(255, 255, 255, .8);
+        padding: 15px;
+        margin-top: 80px;
+    }
+
+    @media (min-width: 768px) {
+        div.event-program {
+            width: 70%;
+        }
+    }
+
+    @media (min-width: 992px) {
+        div.event-program {
+            width: 50%;
+        }
+    }
   
   /* ==========================================================================
      Helper classes
