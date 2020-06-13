@@ -196,6 +196,20 @@
     .float-right {
         float: right;
     }
+
+    .parallax::before {
+        width: 100%; 
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-repeat: no-repeat; 
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+        filter: brightness(.8);
+        -webkit-filter: brightness(.8);
+    }
   
      div.hero {
          background-image: url(../img/encabezado.jpg);
@@ -521,6 +535,42 @@
     div.guest:hover p {
         bottom: -80px;
         opacity: 0;
+    }
+
+    div.counter {
+        position: relative;
+        height: auto;
+    }
+
+    div.counter::before {
+        content: '';
+        background-image: url(../img/bg-resumen.jpg);
+    }
+
+    ul.event-summary {
+        position: relative;
+        padding: 120px 0;
+    }
+
+    ul.event-summary li {
+        width: 50%;
+        float: left;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        font-family: 'Oswald', sans-serif;
+    }
+
+    @media (min-width: 768px) {
+        ul.event-summary li {
+            width: 25%;
+        }
+    }
+
+    p.number {
+        color: #fe4918;
+        font-size: 4em;
+        margin: 0 0 10px 0;
     }
   
   /* ==========================================================================
