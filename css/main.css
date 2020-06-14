@@ -143,6 +143,31 @@
         margin: 0;
     }
 
+    blockquote {
+        background-color: white;
+        border: 1px solid #e1e1e1;
+        position: relative;
+        margin: 0 0 10px 0;
+        padding-bottom: 20px;
+    }
+
+    blockquote p {
+        text-align: justify!important;
+        font-size: 1em!important;
+        font-family: 'PT Sans', sans-serif;
+        padding: 0 20px 0 65px;
+    }
+
+    blockquote p::before {
+        content: '\201c';
+        position: absolute;
+        left: 13px;
+        top: 8px;
+        font-size: 8rem;
+        line-height: 1;
+        color: #fe4918;
+    }
+
      .container {
         width: 98%;
         margin: 0 auto;
@@ -187,10 +212,16 @@
         margin-top: 20px;
         display: inline-block;
         transition: all .3s ease;
+        border: 2px solid #fe4918;
     }
 
     .button:hover {
         background-color: #e33000;
+    }
+
+    .button.hollow {
+        background-color: white;
+        color: #fe4918;
     }
 
     .float-right {
@@ -571,6 +602,113 @@
         color: #fe4918;
         font-size: 4em;
         margin: 0 0 10px 0;
+        font-family: 'Oswald', sans-serif;
+    }
+
+    ul.price-list > li {
+        padding: 10px;
+    }
+
+    @media (min-width: 768px) {
+        ul.price-list > li {
+            float: left;
+            width: 33.3%;
+        }
+    }
+
+    div.price-table {
+        border: 1px solid #e1e1e1;
+        background-color: white;
+        padding: 40px 0;
+        text-align: center;
+        transition: all .3s ease;
+    }
+
+    div.price-table:hover {
+        transform: scale(1.1);
+        border: 1px solid #fe4918;
+        box-shadow: 0 0 50px #666;
+    }
+
+    div.price-table ul li {
+        font-family: 'PT Sans', sans-serif;
+        font-size: 14px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        color: #868686;
+        line-height: 26px;
+    }
+
+    div.price-table ul li::before {
+        content: '\f00c';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 5px;
+        font-size: 20px;
+        color: green;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    div.price-table h3 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+
+    div.price-table p.number {
+        color: black;
+        margin: 20px 0;
+    }
+
+    div.map {
+        height: 420px;
+        background-color: green;
+    }
+
+    div.tokens {
+        padding-bottom: 20px;
+    }
+
+    div.token {
+        padding: 5px;
+    }
+
+    @media (min-width: 768px) {
+        div.token {
+            float: left;
+            width: 33.3%;
+        }
+    }
+
+    footer.token-info {
+        padding: 0;
+    }
+
+    footer.token-info img {
+        float: left;
+        width: 20%;
+        border-radius: 50%;
+        margin-left: 20px;
+    }
+
+    footer.token-info cite {
+        color: #fe4918;
+        text-transform: uppercase;
+        font-size: 12px;
+        padding-top: 20px;
+        width: 66.6%;
+        float: right;
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    footer.token-info cite span {
+        color: black;
+        display: block;
+        text-transform: none;
+        margin-top: 5px;
     }
   
   /* ==========================================================================
