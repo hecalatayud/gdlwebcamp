@@ -168,6 +168,45 @@
         color: #fe4918;
     }
 
+    footer.site-footer {
+        background-color: #353535;
+        padding-top: 40px;
+        margin-top: 20px;
+    }
+
+    footer h3 {
+        color: white;
+        text-transform: uppercase;
+        font-family: 'Oswald', sans-serif;
+        margin-bottom: 20px;
+    }
+
+    footer h3 span {
+        color: #fe4918;
+    }
+
+    footer .container > div {
+        color: white;
+        padding: 0 20px;
+        font-size: 12px;
+        text-align: justify;
+    }
+
+    footer .last-tweets li {
+        margin-bottom: 10px;
+    }
+
+    footer nav.social-networks {
+        text-align: left;
+    }
+
+    @media (min-width: 768px) {
+        footer .container > div {
+            width: 33.3%;
+            float: left;
+        }
+    }
+
      .container {
         width: 98%;
         margin: 0 auto;
@@ -762,6 +801,14 @@
             width: 25%;
             float: left;
         }
+    }
+
+    p.copyright {       
+        background-color: #2e2e2e;
+        color: white;
+        padding: 10px 0;
+        margin: 20px 0 0 0;
+        text-align: center;
     }
   
   /* ==========================================================================
