@@ -1,0 +1,242 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&family=PT+Sans&display=swap">
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+    <!-- Add your site or application content here -->
+    <header class="site-header">
+        <div class="hero">
+            <div class="header-content">
+                <nav class="social-networks">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </nav>
+                <div class="info-event">
+                    <div class="clearfix">
+                        <p class="date"><i class="fas fa-calendar-alt"></i> 10-12 Dic</p>
+                        <p class="city"><i class="fas fa-map-marker-alt"></i> Valencia, SP</p>
+                    </div>        
+                    <h1 class="site-name">GdlWebCamp</h1>
+                    <p class="slogan">La mejor conferencia de <span>diseño web</span></p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="bar">
+        <div class="container clearfix">
+            <div class="logo">
+                <img src="/img/logo.svg" alt="logo gdlwebcamp">
+            </div>
+            <div class="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="main-nav">
+                <a href="#">Conferencia</a>
+                <a href="#">Calendario</a>
+                <a href="#">Invitados</a>
+                <a href="registro.html">Reservaciones</a>
+            </nav>
+        </div>
+    </div>
+    <section class="section container">
+        <h2>Registro de usuarios</h2>
+        <form id="register" class="register" action="index.html" method="POST">
+            <div id="user-data" class="register box clearfix">
+                <div class="field">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" placeholder="Tu nombre">
+                </div>
+                <div class="field">
+                    <label for="last-name">Nombre:</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Tu apellido">
+                </div>
+                <div class="field">
+                    <label for="email">Nombre:</label>
+                    <input type="email" id="email" name="email" placeholder="Tu email">
+                </div>
+                <div id="error"></div>
+            </div>
+            <div id="packages" class="packages">
+                <h3>Elige el número de boletos</h3>
+                <ul class="price-list clearfix">
+                    <li>
+                        <div class="price-table">
+                            <h3>Pase por día (viernes)</h3>
+                            <p class="number">$30</p>
+                            <ul>
+                                <li>Bocadillos gratis</li>
+                                <li>Todas las conferencias</li>
+                                <li>Todos los talleres</li>
+                            </ul>
+                            <div class="order">
+                                <label for="one-day-pass">Boletos deseados:</label>
+                                <input type="number" id="one-day-pass" min="0" size="3" placeholder="0">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="price-table">
+                            <h3>Todos los días</h3>
+                            <p class="number">$50</p>
+                            <ul>
+                                <li>Bocadillos gratis</li>
+                                <li>Todas las conferencias</li>
+                                <li>Todos los talleres</li>
+                            </ul>
+                            <div class="order">
+                                <label for="full-pass">Boletos deseados:</label>
+                                <input type="number" id="full-pass" min="0" size="3" placeholder="0">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="price-table">
+                            <h3>Pase por dos días (viernes y sábado)</h3>
+                            <p class="number">$45</p>
+                            <ul>
+                                <li>Bocadillos gratis</li>
+                                <li>Todas las conferencias</li>
+                                <li>Todos los talleres</li>
+                            </ul>
+                            <div class="order">
+                                <label for="two-day-pass">Boletos deseados:</label>
+                                <input type="number" id="two-day-pass" min="0" size="3" placeholder="0">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="events" class="events clearfix">
+                <h3>Elige tus talleres</h3>
+                <div class="box">
+                    <div id="friday" class="day-content clearfix">
+                        <h4>Viernes</h4>
+                        <div>
+                            <p>Talleres:</p>
+                            <label><input type="checkbox" name="register" id="workshop-01"><time>10:00</time> Responsive web design</label>
+                            <label><input type="checkbox" name="register" id="workshop-02"><time>12:00</time> Flexbox</label>
+                            <label><input type="checkbox" name="register" id="workshop-03"><time>14:00</time> HTML5 y CSS3</label>
+                            <label><input type="checkbox" name="register" id="workshop-04"><time>17:00</time> Drupal</label>
+                            <label><input type="checkbox" name="register" id="workshop-05"><time>19:00</time> WordPress</label>
+                        </div>
+                        <div>
+                            <p>Conferencias:</p>
+                            <label><input type="checkbox" name="register" id="conf-01"><time>10:00</time> Cómo ser freelancer</label>
+                            <label><input type="checkbox" name="register" id="conf-02"><time>17:00</time> Tecnologías del futuro</label>
+                            <label><input type="checkbox" name="register" id="conf-03"><time>19:00</time> Seguridad en la web</label>
+                        </div>
+                        <div>
+                            <p>Seminarios:</p>
+                            <label><input type="checkbox" name="register" id="sem-01"><time>10:00</time> Diseño UI y UX para móviles</label>
+                        </div>
+                    </div>
+                    <div id="saturday" class="day-content clearfix">
+                        <h4>Sábado</h4>
+                        <div>
+                            <p>Talleres:</p>
+                            <label><input type="checkbox" name="register" id="workshop-06"><time>10:00</time> AngularJS</label>
+                            <label><input type="checkbox" name="register" id="workshop-07"><time>12:00</time> PHP y MySQL</label>
+                            <label><input type="checkbox" name="register" id="workshop-08"><time>14:00</time> JavaScript avanzado</label>
+                            <label><input type="checkbox" name="register" id="workshop-09"><time>17:00</time> SEO en Google</label>
+                            <label><input type="checkbox" name="register" id="workshop-10"><time>19:00</time> De Photoshop a HTML5 y CSS3</label>
+                            <label><input type="checkbox" name="register" id="workshop-11"><time>21:00</time> PHP medio y avanzado</label>
+                        </div>
+                        <div>
+                            <p>Conferencias:</p>
+                            <label><input type="checkbox" name="register" id="conf-04"><time>10:00</time> Cómo crear una tienda online que venda millones en pocos días</label>
+                            <label><input type="checkbox" name="register" id="conf-05"><time>17:00</time> Los mejores lugares para encontrar trabajo</label>
+                            <label><input type="checkbox" name="register" id="conf-06"><time>19:00</time> Pasos para crear un negocio rentable</label>
+                        </div>
+                        <div>
+                            <p>Seminarios:</p>
+                            <label><input type="checkbox" name="register" id="sem-02"><time>10:00</time> Aprende a programar en una mañana</label>
+                            <label><input type="checkbox" name="register" id="sem-03"><time>17:00</time> Diseño UI y UX para móviles</label>
+                        </div>
+                    </div>
+                    <div id="sunday" class="day-content clearfix">
+                        <h4>Domingo</h4>
+                        <div>
+                            <p>Talleres:</p>
+                            <label><input type="checkbox" name="register" id="workshop-12"><time>10:00</time> Laravel</label>
+                            <label><input type="checkbox" name="register" id="workshop-13"><time>12:00</time> Crea tu propia API</label>
+                            <label><input type="checkbox" name="register" id="workshop-14"><time>14:00</time> JavaScript y jQuery</label>
+                            <label><input type="checkbox" name="register" id="workshop-15"><time>17:00</time> Creando plantillas para WordPress</label>
+                            <label><input type="checkbox" name="register" id="workshop-16"><time>19:00</time> Tiendas virtuales en Magento</label>
+                        </div>
+                        <div>
+                            <p>Conferencias:</p>
+                            <label><input type="checkbox" name="register" id="conf-07"><time>10:00</time> Cómo hacer marketing en línea</label>
+                            <label><input type="checkbox" name="register" id="conf-08"><time>17:00</time> ¿Con qué lenguaje debo empezar?</label>
+                            <label><input type="checkbox" name="register" id="conf-09"><time>19:00</time> Frameworks y librerías Open Source</label>
+                        </div>
+                        <div>
+                            <p>Seminarios:</p>
+                            <label><input type="checkbox" name="register" id="sem-04"><time>10:00</time> Creando una app en Android en una tarde</label>
+                            <label><input type="checkbox" name="register" id="sem-05"><time>17:00</time> Creando un app en iOS en una tarde</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+    <footer class="site-footer">
+        <div class="container clearfix">
+            <div class="footer-info">
+                <h3>Sobre <span>gdlwebcamp</span></h3>
+                <p>Pellentesque cursus sagittis risus tristique vehicula. Duis sit amet quam nulla. Ut sit amet fringilla velit. Cras vehicula nec nisl id euismod.</p>
+            </div>
+            <div class="last-tweets">
+                <h3>Últimos <span>tweets</span></h3>
+                <ul>
+                    <li>Pellentesque cursus sagittis risus tristique vehicula. Duis sit amet quam nulla. Ut sit amet fringilla velit. Cras vehicula nec nisl id euismod.</li>
+                    <li>Pellentesque cursus sagittis risus tristique vehicula. Duis sit amet quam nulla. Ut sit amet fringilla velit. Cras vehicula nec nisl id euismod.</li>
+                    <li>Pellentesque cursus sagittis risus tristique vehicula. Duis sit amet quam nulla. Ut sit amet fringilla velit. Cras vehicula nec nisl id euismod.</li>
+                </ul>
+            </div>
+            <div class="menu">
+                <h3>Redes <span>sociales</span></h3>
+                <nav class="social-networks">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </nav>
+            </div>
+        </div>
+        <p class="copyright">Todos los derechos reservados GDLWEBCAMP 2020.</p>
+    </footer>
+    <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+      ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+</html>
