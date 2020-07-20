@@ -137,6 +137,12 @@
         margin: 0;
     }
 
+    h4 {
+        text-align: center;
+        text-transform: uppercase;
+        border-bottom: 2px solid #fe4918;
+    }
+
     ul {
         list-style: none;
         padding: 0;
@@ -809,6 +815,102 @@
         padding: 10px 0;
         margin: 20px 0 0 0;
         text-align: center;
+    }
+
+    form.register h3 {
+        text-align: center;
+        text-transform: uppercase;
+        margin: 20px 0 0 0;
+    }
+
+    div.box {
+        background-color: white;
+        border: 1px solid #e1e1e1;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    div.field {
+        padding: 20px;
+    }
+
+    @media (min-width: 768px) {
+        div.field {
+            float: left;
+            width: 33.3%;
+        }
+    }
+
+    div.packages .price-table:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    div.packages .price-table input {
+        clear: both;
+        width: 100px;
+        margin: 10px auto 0 auto;
+        display: block;
+    }
+
+    .day-content {
+        padding: 20px;
+    }
+
+    @media (min-width: 768px) {
+        .day-content > div {
+            float: left;
+            width: 33.3%;
+        }
+    }
+
+    .day-content > div p {
+        text-align: left;
+    }
+
+    .day-content > div label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .day-content > div input {
+        margin-right: 10px;
+    }
+
+    .day-content > div label time {
+        color: #fe4918;
+        font-weight: bold;
+    }
+
+    div.summary p {
+        font-size: 1.2em;
+        text-transform: uppercase;
+    }
+
+    div.summary div.extras {
+        float: left;
+        width: 50%;
+        padding: 30px;
+    }
+
+    div.extras div.order {
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    div.extras div.order input {
+        margin: 10px 0 0 0;
+    }
+
+    div.summary div.total {
+        float: right;
+        width: 50%;
+        padding: 30px;
+    }
+
+    div.summary input {
+        display: block;
+        margin: 10px auto;
     }
   
   /* ==========================================================================

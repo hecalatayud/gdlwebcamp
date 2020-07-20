@@ -198,6 +198,42 @@
                     </div>
                 </div>
             </div>
+            <div id="summary" class="summary">
+                <h3>Pago y extras</h3>
+                <div class="box clearfix">
+                    <div class="extras">
+                        <div class="order">
+                            <label for="event-shirt">Camisa del evento $10 <small>(promoción 7% dto.)</small></label>
+                            <input type="number" id="event-shirt" min="0" size="3" placeholder="0">
+                        </div>
+                        <div class="order">
+                            <label for="tags">Paquete de 10 etiquetas $2 <small>(HTML5, CSS3, JavaScript, Chrome)</small></label>
+                            <input type="number" id="tags" min="0" size="3" placeholder="0">
+                        </div>
+                        <div class="order">
+                            <label for="gift">Seleccione un regalo</label><br>
+                            <select id="gift" required>
+                                <option value="">-- Seleccione un regalo --</option>
+                                <option value="tag">Etiquetas</option>
+                                <option value="bracelet">Pulsera</option>
+                                <option value="pens">Plumas</option>
+                            </select>
+                        </div>
+                        <input id="calculate" class="button" type="submit" value="Calcular">                     
+                    </div>
+                    <div id="total">
+                        <p>Resumen:</p>
+                        <div id="product-list">
+
+                        </div>
+                        <p>Total:</p>
+                        <div id="total-sum">
+
+                        </div>
+                        <input id="button-register" class="button" type="submit" value="Pagar">
+                    </div>
+                </div>
+            </div>
         </form>
     </section>
     <footer class="site-footer">
